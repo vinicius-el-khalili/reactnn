@@ -1,6 +1,7 @@
 import React from "react";
 type ScrollAnimationContainerType = {
-    children: React.ReactNode
+    children: React.ReactNode,
+    href?:React.MutableRefObject<null>
 }
 export const ScrollAnimationContainer = ({children}:ScrollAnimationContainerType) => {
     return(
