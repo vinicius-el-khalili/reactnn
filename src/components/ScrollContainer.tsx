@@ -5,7 +5,7 @@ type ScrollContainerType={
 }
 export const ScrollContainer = ({children,style}:ScrollContainerType) => {
     return (
-        <div className="ScrollContainer" style={style}>
+        <div className="ScrollContainer hidden" style={style}>
             {children}
         </div>
     )
