@@ -1,8 +1,12 @@
 import React from "react";
-export const ScrollContainer = () => {
+type ScrollContainerType={
+    children?:React.ReactNode,
+    style?:React.CSSProperties
+}
+export const ScrollContainer = ({children,style}:ScrollContainerType) => {
     return (
-        <div className="ScrollContainer">
-            hey!!!
+        <div className="ScrollContainer" style={style}>
+            {children}
         </div>
     )
 }

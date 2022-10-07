@@ -6,12 +6,12 @@
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
-.App{
+.ScrollContainer{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
     background-color: tomato;
     color: white;
+    font-size: 2rem;
 }
