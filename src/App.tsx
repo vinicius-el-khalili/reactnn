@@ -1,9 +1,9 @@
 import React from 'react';
-import './App.css';
-
+import { ScrollContainer } from './components/ScrollContainer';
 function App() {
   return (
-    <div className="App">Hey :)
+    <div className="App">
+      <ScrollContainer />
     </div>
   );
 }
