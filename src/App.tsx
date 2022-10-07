@@ -8,7 +8,7 @@ function App() {
   
   const intersectionCallback = (entries:any[]) => {
     const [entry] = entries
-    setIsVisible(entry.isIntersecting)
+    setIsVisible(entry.isIntersecting) 
     console.log('ok')
   };
   
