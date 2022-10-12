@@ -2,6 +2,7 @@ import React from 'react';
 import { ScrollContainer } from './components/ScrollContainer';
 import { useRef } from 'react';
 import { useElementOnScreen } from './hooks/useElementOnScreen';
+import { AnimateOnShow } from './components/AnimateOnShow';
 
 const options = {
   root:null,
@@ -19,27 +20,28 @@ function App() {
   const target3 = useRef(null);
   const isVisible3 = useElementOnScreen(options,target3);
   return (
-    <div className="App">
-      
+    <div className="App">      
       <div className='Header'>
         <h2>1:{!isVisible1 ? 'n' : 'y'}, 2:{!isVisible2 ? 'n' : 'y'}</h2>
       </div>
-
       <ScrollContainer style={{backgroundColor:"coral"}} >
-        <h1 className={!isVisible1?"hidden":"show"} ref={target1} >Target 1</h1>
-      </ScrollContainer>
-      
+        <AnimateOnShow animationClasses={["show"]} ioOptions={options}>
+          <h1>hi</h1>
+        </AnimateOnShow>
+        </ScrollContainer>
       <ScrollContainer style={{backgroundColor:"turquoise"}} >
-        <h1 className={!isVisible2?"hidden":"show"} ref={target2} >Target 2</h1>
+      <AnimateOnShow animationClasses={["show"]} ioOptions={options}>
+          <h1>hey</h1>
+        </AnimateOnShow>
       </ScrollContainer>
-      
       <ScrollContainer style={{backgroundColor:"cornflowerblue"}} >
-        <h1 className={!isVisible3?"hidden":"show"} ref={target3} >Target 3</h1>
+        <AnimateOnShow animationClasses={["show"]} ioOptions={options}>
+          <h1>This is now a component</h1>
+          <h2>And we can animate anything</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae voluptatem nesciunt excepturi soluta, itaque, pariatur in odio tempore voluptate quis optio voluptas corrupti eaque reprehenderit quibusdam enim sequi porro. Aliquam, itaque quam.</p>
+        </AnimateOnShow>
       </ScrollContainer>
-
-
     </div>
   );
-}
-
+};
 export default App;

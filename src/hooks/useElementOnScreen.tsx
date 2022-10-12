@@ -1,10 +1,5 @@
 import React, { useState, useMemo, useEffect } from "react";
-type optionsType = {
-  root: null,
-  rootMargin: string,
-  threshold: number,
-};
-export const useElementOnScreen = (options:optionsType,targetRef:React.MutableRefObject<null>) => {
+export const useElementOnScreen = (options:object,targetRef:React.MutableRefObject<null>) => {
   const [isVisible,setIsVisible]=useState(false);
   const callbackfunction=(entries:any)=>{
     const [entry]=entries;
