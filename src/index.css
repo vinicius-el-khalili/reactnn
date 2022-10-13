@@ -68,10 +68,12 @@ h1 {
     width: 100%; }
   .test-content-1 p {
     width: 100%; }
-  @media (max-width: 500px) {
-    .test-content-1 {
-      align-items: center; }
-      .test-content-1 h1 {
-        font-size: 2rem; } }
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2rem; }
+
+  h2 {
+    font-size: 1.2rem; } }
 
 /*# sourceMappingURL=index.css.map */

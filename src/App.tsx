@@ -12,23 +12,29 @@ function App() {
     <div className="App">
       <ScrollContainer style={{backgroundColor:"coral"}} >
         <AnimateOnShow preAnimation={["hidden-left"]} postAnimation={["show"]} ioOptions={options}>
-          <h1>right</h1>
-        </AnimateOnShow>
-        </ScrollContainer>
-      <ScrollContainer style={{backgroundColor:"turquoise"}} >
-      <AnimateOnShow preAnimation={["hidden-right"]} postAnimation={["show"]} ioOptions={options}>
-          <h1>left</h1>
+          <h1>Swap me</h1>
         </AnimateOnShow>
       </ScrollContainer>
+
+      <ScrollContainer style={{backgroundColor:"turquoise"}} >
+        <AnimateOnShow preAnimation={["hidden-right"]} postAnimation={["show"]} ioOptions={options}>
+            <h1>Type</h1>
+        </AnimateOnShow>
+        <AnimateOnShow preAnimation={["hidden-left"]} postAnimation={["show"]} ioOptions={options}>
+            <h1>Script</h1>
+        </AnimateOnShow>        
+      </ScrollContainer>
+
       <ScrollContainer style={{backgroundColor:"cornflowerblue"}} >
         <AnimateOnShow preAnimation={["hidden-right"]} postAnimation={["show"]} ioOptions={options}>
           <div className='test-content-1'>
             <h1>Intersection Observers!</h1>
-            <h2>And we can animate anything</h2>
+            <h2>Intersection observers are awesome</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae voluptatem nesciunt excepturi soluta, itaque, pariatur in odio tempore voluptate quis optio voluptas corrupti eaque reprehenderit quibusdam enim sequi porro. Aliquam, itaque quam.</p>
           </div>
         </AnimateOnShow>
       </ScrollContainer>
+
     </div>
   );
 };
