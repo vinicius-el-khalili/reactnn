@@ -6,6 +6,7 @@
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
+
 h1{
     color: white;
     font-size: 5rem;
@@ -69,9 +70,8 @@ h1{
     gap: 1rem;
     align-items: flex-start;
     justify-content: center;
-    margin: auto;
     width: 80%;
-    height: 100vh;
+    margin: auto;
     h1{
         font-size: 3rem;
         width: 100%;
@@ -82,6 +82,33 @@ h1{
     }
     p{
         width: 100%;
+    }
+}
+
+.Navbar{
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 1.7rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+    button{
+        width: 20px;
+        padding: 1rem;
+        font-size: 1.2rem;
+        border: 1px dashed blue;
+        &:nth-child(1){
+            background-color: coral;
+        };
+        &:nth-child(2){
+            background-color: turquoise;
+        };
+        &:nth-child(3){
+            background-color: cornflowerblue;
+        }
+
+
     }
 }
 

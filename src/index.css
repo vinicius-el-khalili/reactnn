@@ -57,9 +57,8 @@ h1 {
   gap: 1rem;
   align-items: flex-start;
   justify-content: center;
-  margin: auto;
   width: 80%;
-  height: 100vh; }
+  margin: auto; }
   .test-content-1 h1 {
     font-size: 3rem;
     width: 100%;
@@ -68,6 +67,26 @@ h1 {
     width: 100%; }
   .test-content-1 p {
     width: 100%; }
+
+.Navbar {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 1.7rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 1; }
+  .Navbar button {
+    width: 20px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: 1px dashed blue; }
+    .Navbar button:nth-child(1) {
+      background-color: coral; }
+    .Navbar button:nth-child(2) {
+      background-color: turquoise; }
+    .Navbar button:nth-child(3) {
+      background-color: cornflowerblue; }
 
 @media (max-width: 500px) {
   h1 {
