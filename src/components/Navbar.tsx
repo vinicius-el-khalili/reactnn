@@ -11,7 +11,7 @@ export const Navbar = ({idList,scrollToId,scrollPage}:NavbarProps) => {
                 <button 
                     key={"sb"+id}
                     onClick={() => scrollToId(id)}
-                    style={id==scrollPage?{
+                    style={id===scrollPage?{
                         opacity:"1"
                     }:{
                         opacity:"0.5"

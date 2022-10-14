@@ -55,14 +55,14 @@ function App() {
             <div className='test-content-1'>
               <h1>Lorem</h1>
               <h2>Lorem, ipsum.</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae voluptatem nesciunt excepturi soluta, itaque, pariatur in odio tempore voluptate quis optio voluptas corrupti eaque reprehenderit quibusdam enim sequi porro. Aliquam, itaque quam.</p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, aliquid!</p>
             </div>
           </AnimateOnShow>
           <AnimateOnShow preAnimation={["hidden-left"]} postAnimation={["show"]} ioOptions={options}>
             <div className='test-content-1'>
               <h1>Lorem</h1>
               <h2>Lorem, ipsum.</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae voluptatem nesciunt excepturi soluta, itaque, pariatur in odio tempore voluptate quis optio voluptas corrupti eaque reprehenderit quibusdam enim sequi porro. Aliquam, itaque quam.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, laboriosam!</p>
             </div>
           </AnimateOnShow>
         </div>
