@@ -33,30 +33,41 @@ function App() {
       </ScrollContainer>
 
       <ScrollContainer style={{backgroundColor:"turquoise"}} id={"sc2"} setScrollPage={setScrollPage}>
-        <AnimateOnShow preAnimation={["hidden-right"]} postAnimation={["show"]} ioOptions={options}>
-            <div className='test-content-1'>
-              <h1>Intersection Observers!</h1>
-              <h2>Intersection observers are awesome</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae voluptatem nesciunt excepturi soluta, itaque, pariatur in odio tempore voluptate quis optio voluptas corrupti eaque reprehenderit quibusdam enim sequi porro. Aliquam, itaque quam.</p>
-            </div>
-        </AnimateOnShow>
-        <AnimateOnShow preAnimation={["hidden-left"]} postAnimation={["show"]} ioOptions={options}>
-            <div className='test-content-1'>
-              <h1>Intersection Observers!</h1>
-              <h2>Intersection observers are awesome</h2>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae voluptatem nesciunt excepturi soluta, itaque, pariatur in odio tempore voluptate quis optio voluptas corrupti eaque reprehenderit quibusdam enim sequi porro. Aliquam, itaque quam.</p>
-            </div>
-        </AnimateOnShow>        
+        <div className='DoubleContainer-V'>
+          <AnimateOnShow preAnimation={["hidden-right"]} postAnimation={["show"]} ioOptions={options}>
+              <div className='test-content-1'>
+                <h1>Intersection Observers!</h1>
+                <h2>Intersection observers are awesome</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae voluptatem nesciunt excepturi soluta, itaque, pariatur in odio tempore voluptate quis optio voluptas corrupti eaque reprehenderit quibusdam enim sequi porro. Aliquam, itaque quam.</p>
+              </div>
+          </AnimateOnShow>
+          <AnimateOnShow preAnimation={["hidden-left"]} postAnimation={["show"]} ioOptions={options}>
+              <div className='test-content-1'>
+                <h1>Intersection Observers!</h1>
+                <h2>Intersection observers are awesome</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae voluptatem nesciunt excepturi soluta, itaque, pariatur in odio tempore voluptate quis optio voluptas corrupti eaque reprehenderit quibusdam enim sequi porro. Aliquam, itaque quam.</p>
+              </div>
+          </AnimateOnShow>        
+        </div>
       </ScrollContainer>
 
       <ScrollContainer style={{backgroundColor:"cornflowerblue"}} id={"sc3"} setScrollPage={setScrollPage}>
-        <AnimateOnShow preAnimation={["hidden-right"]} postAnimation={["show"]} ioOptions={options}>
-          <div className='test-content-1'>
-            <h1>Intersection Observers!</h1>
-            <h2>Intersection observers are awesome</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae voluptatem nesciunt excepturi soluta, itaque, pariatur in odio tempore voluptate quis optio voluptas corrupti eaque reprehenderit quibusdam enim sequi porro. Aliquam, itaque quam.</p>
-          </div>
-        </AnimateOnShow>
+        <div className='DoubleContainer-H'>
+          <AnimateOnShow preAnimation={["hidden-right"]} postAnimation={["show"]} ioOptions={options}>
+            <div className='test-content-1'>
+              <h1>Intersection</h1>
+              <h2>Lorem, ipsum.</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae voluptatem nesciunt excepturi soluta, itaque, pariatur in odio tempore voluptate quis optio voluptas corrupti eaque reprehenderit quibusdam enim sequi porro. Aliquam, itaque quam.</p>
+            </div>
+          </AnimateOnShow>
+          <AnimateOnShow preAnimation={["hidden-left"]} postAnimation={["show"]} ioOptions={options}>
+            <div className='test-content-1'>
+              <h1>Observers</h1>
+              <h2>Lorem, ipsum.</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae voluptatem nesciunt excepturi soluta, itaque, pariatur in odio tempore voluptate quis optio voluptas corrupti eaque reprehenderit quibusdam enim sequi porro. Aliquam, itaque quam.</p>
+            </div>
+          </AnimateOnShow>
+        </div>
       </ScrollContainer>
 
     </div>
