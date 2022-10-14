@@ -26,7 +26,7 @@ function App() {
         <AnimateOnShow preAnimation={["hidden-left"]} postAnimation={["show"]} ioOptions={options}>
         <div className='test-content-1'>
             <h1>Intersection Observers</h1>
-            <h2>Lorem ipsum dolor sit.</h2>
+            <h2>Simple animations with intersection observers.</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae voluptatem nesciunt excepturi soluta, itaque, pariatur in odio tempore voluptate quis optio voluptas corrupti eaque reprehenderit quibusdam enim sequi porro. Aliquam, itaque quam.</p>
           </div>
         </AnimateOnShow>
