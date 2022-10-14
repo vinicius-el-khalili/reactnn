@@ -73,7 +73,6 @@ h1{
     width: 80%;
     margin: auto;
     h1{
-        font-size: 3rem;
         width: 100%;
         color: white;
     }
@@ -98,6 +97,7 @@ h1{
         padding: 1rem;
         font-size: 1.2rem;
         border: 1px dashed blue;
+        cursor: pointer;
         &:nth-child(1){
             background-color: coral;
         };
@@ -112,7 +112,7 @@ h1{
     }
 }
 
-@media (max-width:500px) {
+@media (max-width:550px) {
     h1{
         font-size: 2rem;
     }

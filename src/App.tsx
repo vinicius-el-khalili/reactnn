@@ -1,6 +1,6 @@
-import { useRef } from 'react';
 import { ScrollContainer } from './components/ScrollContainer';
 import { AnimateOnShow } from './components/AnimateOnShow';
+import { Navbar } from './components/Navbar';
 
 const options = {
   root:null,
@@ -10,26 +10,15 @@ const options = {
 
 function App() {
   
-  //===ScrollWithUseRef===//
-  const SC1 = useRef<HTMLDivElement | null>(null);
-  const SC2 = useRef<HTMLDivElement | null>(null);
-  const SC3 = useRef<HTMLDivElement | null>(null);
-  const scrolLWithUseRef = (elementRef:React.MutableRefObject<HTMLDivElement | null>) => {
-    elementRef.current?.scrollIntoView({block:"center",behavior:"smooth"})
-  }
+  // ===== scrollToId ===== //
   const scrollToId = (id:string)=>{
     document.querySelector(`#sc${id}`)?.scrollIntoView({block:"center",behavior:"smooth"})
   }
+
   return (
     <div className="App">
       
-      <div className='Navbar'>
-        {["1", "2", "3"].map((id) => (
-          <button key={id} onClick={() => scrollToId(id)}>
-            
-          </button>
-        ))}
-      </div>
+      <Navbar idList={["1","2","3"]} scrollToId={scrollToId}/>
       
       <ScrollContainer style={{backgroundColor:"coral"}} id={"sc1"}>
         <AnimateOnShow preAnimation={["hidden-left"]} postAnimation={["show"]} ioOptions={options}>
