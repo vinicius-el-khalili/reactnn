@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/reactnn/static/css/main.9e06aa88.css",
-    "main.js": "/reactnn/static/js/main.2b1c487e.js",
+    "main.js": "/reactnn/static/js/main.d3df945f.js",
     "index.html": "/reactnn/index.html",
     "main.9e06aa88.css.map": "/reactnn/static/css/main.9e06aa88.css.map",
-    "main.2b1c487e.js.map": "/reactnn/static/js/main.2b1c487e.js.map"
+    "main.d3df945f.js.map": "/reactnn/static/js/main.d3df945f.js.map"
   },
   "entrypoints": [
     "static/css/main.9e06aa88.css",
-    "static/js/main.2b1c487e.js"
+    "static/js/main.d3df945f.js"
   ]
 }
