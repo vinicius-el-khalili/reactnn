@@ -1,6 +1,7 @@
 import { ScrollContainer } from './components/ScrollContainer';
 import { AnimateOnShow } from './components/AnimateOnShow';
 import { Navbar } from './components/Navbar';
+import { useState } from 'react';
 
 const options = {
   root:null,
@@ -11,31 +12,44 @@ const options = {
 function App() {
   
   // ===== scrollToId ===== //
+  const [scrollPage,setScrollPage]=useState("1");
   const scrollToId = (id:string)=>{
-    document.querySelector(`#sc${id}`)?.scrollIntoView({block:"center",behavior:"smooth"})
+    document.querySelector(`#sc${id}`)?.scrollIntoView({block:"center",behavior:"smooth"});
+    setScrollPage(id)
   }
-
   return (
     <div className="App">
       
-      <Navbar idList={["1","2","3"]} scrollToId={scrollToId}/>
-      
-      <ScrollContainer style={{backgroundColor:"coral"}} id={"sc1"}>
+      <Navbar idList={["1","2","3"]} scrollToId={scrollToId} scrollPage={scrollPage}/>
+
+      <ScrollContainer style={{backgroundColor:"coral"}} id={"sc1"} setScrollPage={setScrollPage}>
         <AnimateOnShow preAnimation={["hidden-left"]} postAnimation={["show"]} ioOptions={options}>
-          <h1>Swap me</h1>
+        <div className='test-content-1'>
+            <h1>Intersection Observers!</h1>
+            <h2>Intersection observers are awesome</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae voluptatem nesciunt excepturi soluta, itaque, pariatur in odio tempore voluptate quis optio voluptas corrupti eaque reprehenderit quibusdam enim sequi porro. Aliquam, itaque quam.</p>
+          </div>
         </AnimateOnShow>
       </ScrollContainer>
 
-      <ScrollContainer style={{backgroundColor:"turquoise"}} id={"sc2"}>
+      <ScrollContainer style={{backgroundColor:"turquoise"}} id={"sc2"} setScrollPage={setScrollPage}>
         <AnimateOnShow preAnimation={["hidden-right"]} postAnimation={["show"]} ioOptions={options}>
-            <h1>Type</h1>
+            <div className='test-content-1'>
+              <h1>Intersection Observers!</h1>
+              <h2>Intersection observers are awesome</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae voluptatem nesciunt excepturi soluta, itaque, pariatur in odio tempore voluptate quis optio voluptas corrupti eaque reprehenderit quibusdam enim sequi porro. Aliquam, itaque quam.</p>
+            </div>
         </AnimateOnShow>
         <AnimateOnShow preAnimation={["hidden-left"]} postAnimation={["show"]} ioOptions={options}>
-            <h1>Script</h1>
+            <div className='test-content-1'>
+              <h1>Intersection Observers!</h1>
+              <h2>Intersection observers are awesome</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae voluptatem nesciunt excepturi soluta, itaque, pariatur in odio tempore voluptate quis optio voluptas corrupti eaque reprehenderit quibusdam enim sequi porro. Aliquam, itaque quam.</p>
+            </div>
         </AnimateOnShow>        
       </ScrollContainer>
 
-      <ScrollContainer style={{backgroundColor:"cornflowerblue"}} id={"sc3"}>
+      <ScrollContainer style={{backgroundColor:"cornflowerblue"}} id={"sc3"} setScrollPage={setScrollPage}>
         <AnimateOnShow preAnimation={["hidden-right"]} postAnimation={["show"]} ioOptions={options}>
           <div className='test-content-1'>
             <h1>Intersection Observers!</h1>

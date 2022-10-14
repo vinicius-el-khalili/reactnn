@@ -41,7 +41,7 @@ h1 {
 .hidden-left {
   opacity: 0;
   transition: .4s;
-  transform: translateX(-40%); }
+  transform: translateX(-4rem); }
 
 .hidden-right {
   opacity: 0;
@@ -73,20 +73,18 @@ h1 {
   margin-bottom: 1.7rem;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 1rem;
   z-index: 1; }
   .Navbar button {
     width: 20px;
     padding: 1rem;
     font-size: 1.2rem;
-    border: 1px dashed blue;
+    border-radius: 100%;
+    border: 1px solid black;
+    background-color: white;
+    opacity: 0.5;
     cursor: pointer; }
-    .Navbar button:nth-child(1) {
-      background-color: coral; }
-    .Navbar button:nth-child(2) {
-      background-color: turquoise; }
-    .Navbar button:nth-child(3) {
-      background-color: cornflowerblue; }
 
 @media (max-width: 550px) {
   h1 {
